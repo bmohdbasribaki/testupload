@@ -1,0 +1,139 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 21, 2018, 10:47:32 PM
+    Author     : basri baki
+*/
+
+* {margin:0;font-family:Roboto,sans-serif;outline:0;box-sizing:border-box;font-size:14px}
+body {background:#f1f1f1}
+
+::-webkit-scrollbar {width:10px}
+::-webkit-scrollbar-track {background-color:#f1f1f1}
+::-webkit-scrollbar-thumb {background-color:#9699a2}
+::-webkit-scrollbar-thumb:hover {background-color:#555}
+
+#page {margin:30px auto 60px;width:40%;min-width:800px;min-height:500px}
+#page_content {background:#fff;box-shadow:0 1px 5px #ccc;margin:20px 0 20px;border-radius:3px;position:relative;padding:30px 30px 60px}
+
+.pageCaption {margin-bottom:40px;font-size:34px;line-height:40px}
+.blockCaption {margin-bottom:20px;font-size:24px;border-bottom:1px solid #ddd;line-height:40px}
+
+#header {}
+.prjData {float:right;font-weight:500;line-height:24px;display:flex}
+.prjData > a {font-size:12px;display:inline-block;padding:0 10px;border-radius:3px;text-decoration:none;margin-left:5px;transition:all 0.2s ease-in-out}
+.prjData > a:hover {box-shadow:inset 0 0 0 30px rgba(0,0,0,0.2)}
+.prjData > .prjVer {background:transparent;color:#555;display:inline-block;padding:0 10px;margin-left:5px;font-size:12px}
+.prjData > .prjVer > span {margin-left:10px;font-size:12px;color:#999}
+.prjData > .prjDownloadLink {color:#fff;background:#0084ff}
+.prjData > .prjGitLink {color:#555;background:#ccc}
+.prjName {font-size:24px;font-weight:500;line-height:24px}
+.prjDesc {color:#777;margin-top:5px;font-size:90%}
+
+#footer {}
+.prjCopyright {color:#777}
+.prjLicense {float:right;font-size:12px}
+.prjAuthor {font-size:12px}
+
+
+.exampleContainer {margin:-1px 0 50px}
+.exampleContainer:last-child {margin-bottom:0}
+.exampleContainer .exampleLive {padding:20px 0;font-size:14px}
+.exampleContainer .exampleLive:after {content:'';clear:both;display:table}
+.exampleContainer .exampleLive .exampleLiveTitle {padding-bottom:10px}
+.exampleContainer .exampleCode {background:#2b2f3b;padding:20px;overflow:auto;border-radius:4px}
+.exampleContainer .exampleCode pre {line-height:0}
+.exampleContainer .exampleCode code {white-space:pre-line}
+.exampleContainer .exampleCode code * {font-family:consolas;font-size:13px}
+.exampleContainer .exampleCode code > p {line-height:20px;color:#7993ad;display:inline-block}
+.exampleContainer .exampleCode code .tab {padding-left:15px}
+.exampleContainer .exampleCode code .tab2 {padding-left:30px}
+.exampleContainer .exampleCode code .tab3 {padding-left:45px}
+.exampleContainer .exampleCode code .tab4 {padding-left:60px}
+.exampleContainer .exampleCode code .tag {color:#97e0e9}
+.exampleContainer .exampleCode code .text {color:#fff}
+.exampleContainer .exampleCode code .key {color:#bf5c5b}
+.exampleContainer .exampleCode code .val {color:#fadf8c}
+.exampleContainer .exampleCode code .var {color:#aae997}
+.exampleContainer .exampleCode code .var2 {color:#b297e9}
+
+.docContainer {margin-bottom:40px}
+.docContainer:last-child {margin-bottom:0}
+.docContainer > .docLive > .docTitle {padding-bottom:10px}
+.docContainer > .docLive > .docText {padding-bottom:10px;font-size:13px;color:#444}
+.docContainer > .docLive > p {margin-bottom:10px;line-height:22px}
+.docContainer > .docCode {background:#f7f7f9;padding:20px;overflow:auto;border-radius:4px}
+.docContainer > .docCode + .docLive {margin-top:20px}
+.docContainer > .docCode pre {line-height:0}
+.docContainer > .docCode code {white-space:pre-line}
+.docContainer > .docCode code * {font-family:consolas;font-size:13px}
+.docContainer > .docCode code > p {line-height:22px;color:#7993ad;display:inline-block}
+.docContainer > .docCode code .tab {padding-left:15px}
+.docContainer > .docCode code .tab2 {padding-left:30px}
+.docContainer > .docCode code .tab3 {padding-left:45px}
+.docContainer > .docCode code .tab4 {padding-left:60px}
+.docContainer > .docCode code .tag {color:#26bfef}
+.docContainer > .docCode code .text {color:#333}
+.docContainer > .docCode code .key {color:#f52222}
+.docContainer > .docCode code .val {color:#007b10}
+.docContainer > .docCode code .var {color:#1cc1d4}
+.docContainer > .docCode code .var2 {color:#7c46e8}
+.docContainer .code {background:#d9dee2;display:inline-block;padding:0 2px;border-radius:3px;line-height:18px;font-family:consolas;font-size:13px}
+
+.containerBlock form {margin:0 25%;text-align:center;padding:30px;background:#fafafa;border:1px solid #ddd}
+.containerBlock form > label {display:block;padding-bottom:5px;text-align:left}
+.containerBlock form > input {width:100%;padding:6px 12px;margin-bottom:15px}
+.containerBlock form > button {margin-top:15px}
+.controlContainer {padding-top:50px;text-align:center}
+.controlContainer div {padding-bottom:10px}
+.controlContainer select {padding:6px 12px;height:34px}
+.controlContainer select + button {margin-left:20px}
+
+
+/* btn */
+.btn {display:inline-block;cursor:pointer;background:#fff;border:1px solid #bbb;height:34px;padding:6px 12px;font-size:14px;line-height:18px;transition:all 0.3s ease-in-out}
+.btn.btn-default {}
+.btn.btn-default:hover {background:#eee;border-color:#bbb}
+.btn.btn-default:focus {background:#ddd;border-color:#bbb}
+.btn.btn-primary {background-color:#0084ff;border-color:#0084ff;color:#fff}
+.btn.btn-primary:hover {background-color:#006dd2;border-color:#006dd2}
+.btn.btn-primary:focus {background-color:#0155a2;border-color:#0155a2;transform:translateY(1px)}
+.btn.btn-default[disabled] {background:#fafafa!important;border-color:#ccc!important;color:#aaa}
+.btn.btn-primary[disabled] {background:#3F9DD0!important;border-color:#537FA9!important;color:#ACD3E8;box-shadow:none!important}
+
+.btn.btn-left {float:left;margin:0 5px 0 0!important}
+
+
+/* tabs */
+.tabs_container {position:fixed;left:calc(50% - 400px - 180px);width:160px;margin-top:-30px}
+.tabs_container:after {content:'';clear:both;display:table}
+.tabs_container > .tab {line-height:40px;cursor:pointer;color:#7d8798;margin:0 15px;font-size:14px}
+.tabs_container > .tab > span {position:relative;display:inline-block;line-height:24px}
+.tabs_container > .tab.active > span {color:#000}
+.tabs_container > .tab > span:before {content:'';position:absolute;height:2px;left:0;width:0;bottom:0;background:#0084ff;transition:.2s}
+.tabs_container > .tab.active > span:before,
+.tabs_container > .tab:hover > span:before {width:100%}
+.tabs_container > .tab:hover {color:#000}
+.tabs_container > .totop {position:fixed;bottom:30px;width:160px;padding:20px;line-height:20px;text-align:center;background:rgba(200, 200, 200, 0.2);font-size:25px;color:#7d8798;border-radius:3px;cursor:pointer;transition:all 0.3s ease-in-out}
+.tabs_container > .totop:hover {background:rgba(200, 200, 200, 0.4)}
+.page_container {position:relative}
+.page_container > .page {min-height:900px;padding-bottom:150px;position:relative}
+.page_container > .page:after {content:'';position:absolute;bottom:100px;border-bottom:1px solid #eee;margin:auto;left:-30px;right:-30px}
+.page_container > .page:last-child {padding-bottom:0}
+.page_container > .page:last-child:after {display:none}
+
+
+
+@media (max-width: 840px){
+    #page {width:auto;min-width:0;margin:20px 20px 100px}
+}
+
+@media (max-width: 460px){
+    .containerBlock form {margin:0}
+}
+
+#waitMe_ex2 {width:40px;margin-right:20px;vertical-align:top}
+#waitMe_ex3 {line-height:20px;width:50%;border:1px solid #eee;padding:7px 15px;display:inline-block;margin-right:20px;vertical-align:top}
